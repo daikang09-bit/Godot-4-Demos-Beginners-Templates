@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://n46vvynghbq"]
+
+[ext_resource type="Texture2D" uid="uid://dbmdhf07da0hf" path="res://Sprites/yinfu/shape 4.png" id="1_vrp3d"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_vrp3d")

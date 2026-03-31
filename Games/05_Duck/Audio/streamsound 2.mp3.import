@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b2utqpl40cqgg"
+path="res://.godot/imported/streamsound 2.mp3-d5a7a0c24f3a2e7e53ef3c2ca693e566.mp3str"
+
+[deps]
+
+source_file="res://Games/05_Duck/Audio/streamsound 2.mp3"
+dest_files=["res://.godot/imported/streamsound 2.mp3-d5a7a0c24f3a2e7e53ef3c2ca693e566.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

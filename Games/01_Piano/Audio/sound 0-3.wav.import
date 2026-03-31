@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://co8e2bd7n41ym"
+path="res://.godot/imported/sound 0-3.wav-34160e6b7614b21b2a9128bc27259f9e.sample"
+
+[deps]
+
+source_file="res://Games/01_Piano/Audio/sound 0-3.wav"
+dest_files=["res://.godot/imported/sound 0-3.wav-34160e6b7614b21b2a9128bc27259f9e.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

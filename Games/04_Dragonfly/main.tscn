@@ -1,0 +1,171 @@
+[gd_scene load_steps=16 format=3 uid="uid://do3fmap4h3e2t"]
+
+[ext_resource type="Script" uid="uid://b25f72464dupb" path="res://Games/04_Dragonfly/Scripts/Directordragonfly.gd" id="1_5epa6"]
+[ext_resource type="Texture2D" uid="uid://bi1xoyathqwov" path="res://Games/04_Dragonfly/Animation/sprite 140001.png" id="1_c82a0"]
+[ext_resource type="AudioStream" uid="uid://bo4nxevq3owpu" path="res://Games/04_Dragonfly/Audio/sound.mp3" id="2_m0dwc"]
+[ext_resource type="Texture2D" uid="uid://brvjp167fkqaj" path="res://Games/04_Dragonfly/Sprites/shape 0.png" id="2_mx7tr"]
+[ext_resource type="Texture2D" uid="uid://dkb4agw7xlkin" path="res://Games/04_Dragonfly/Sprites/shape 0-1.png" id="3_2lb86"]
+[ext_resource type="Texture2D" uid="uid://d3kbf5nlbgma8" path="res://Games/04_Dragonfly/Sprites/sprite 4.png" id="4_4stjr"]
+[ext_resource type="Texture2D" uid="uid://b76lhaye2x3qr" path="res://Games/04_Dragonfly/Sprites/sprite 3.png" id="5_o8fxg"]
+[ext_resource type="Texture2D" uid="uid://7n0jw30v0t8l" path="res://Games/04_Dragonfly/Animation/sprite 140002.png" id="5_wo0kh"]
+[ext_resource type="Texture2D" uid="uid://cvtve0exccrs7" path="res://Games/04_Dragonfly/Sprites/shape 3.png" id="6_0qx4i"]
+[ext_resource type="Texture2D" uid="uid://bxicjalfnkwa3" path="res://Games/04_Dragonfly/Sprites/sprite 9.png" id="6_4stjr"]
+[ext_resource type="Script" uid="uid://c0nkghivye33m" path="res://Games/04_Dragonfly/Scripts/dragonfly.gd" id="9_1ltuv"]
+[ext_resource type="Script" uid="uid://c8x7vs83w3utt" path="res://Scripts/BackButton.gd" id="12_1ltuv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mx7tr"]
+atlas = ExtResource("1_c82a0")
+region = Rect2(0, 0, 135, 74)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k7c55"]
+atlas = ExtResource("5_wo0kh")
+region = Rect2(0, 0, 10, 74)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mscdb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mx7tr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k7c55")
+}],
+"loop": true,
+"name": &"fly_anim",
+"speed": 30.0
+}]
+
+[node name="GameMain" type="Node2D" node_paths=PackedStringArray("dragonfly_list")]
+script = ExtResource("1_5epa6")
+dragonfly_list = [NodePath("dragonfly1"), NodePath("dragonfly2"), NodePath("dragonfly3"), NodePath("dragonfly4")]
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D"]
+position = Vector2(691.00006, 392)
+scale = Vector2(1.3199999, 0.91999626)
+texture = ExtResource("2_mx7tr")
+
+[node name="Sprite2D1" type="Sprite2D" parent="Node2D"]
+position = Vector2(1099, 161)
+scale = Vector2(1.3199999, 1.3199987)
+texture = ExtResource("3_2lb86")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Node2D"]
+position = Vector2(259, 592)
+scale = Vector2(0.5646014, 0.5646014)
+texture = ExtResource("4_4stjr")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Node2D"]
+position = Vector2(431, 530)
+scale = Vector2(1.4400017, 1.4400017)
+texture = ExtResource("5_o8fxg")
+
+[node name="Sprite2D5" type="Sprite2D" parent="Node2D"]
+position = Vector2(1201, 646)
+scale = Vector2(0.92000115, 0.92000115)
+texture = ExtResource("6_4stjr")
+
+[node name="Sprite2D6" type="Sprite2D" parent="Node2D"]
+position = Vector2(1139, 624)
+scale = Vector2(1.5200012, 1.5200012)
+texture = ExtResource("6_4stjr")
+
+[node name="Sprite2D7" type="Sprite2D" parent="Node2D"]
+position = Vector2(1046, 598)
+scale = Vector2(2.360001, 2.360001)
+texture = ExtResource("6_4stjr")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Node2D"]
+position = Vector2(578, 908)
+scale = Vector2(1.3199999, 1.3199999)
+texture = ExtResource("6_0qx4i")
+
+[node name="AudioPlayer" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_m0dwc")
+
+[node name="dragonfly1" type="Area2D" parent="."]
+position = Vector2(256, 329)
+scale = Vector2(1.1200001, 1.1200001)
+script = ExtResource("9_1ltuv")
+
+[node name="Sprite2D" type="Sprite2D" parent="dragonfly1"]
+position = Vector2(1, 0.20000076)
+texture = ExtResource("1_c82a0")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="dragonfly1"]
+position = Vector2(1, -1.7999992)
+polygon = PackedVector2Array(-67.5, -37, -67.5, 7.0999985, -62.5, 9.200001, -62.5, 11.200001, -50.3, 10, -45.2, 10, -27.2, 4, -23.8, 4, -10.5, -5.8999996, -9.5, 34, -9.5, 37, 10.5, 37, 10.5, -5, 15.5, -1.0999985, 15.5, 0.5, 43.5, 8.400002, 43.5, 9.599998, 50.300003, 11, 61.100006, 11, 67.100006, 7, 67.5, -37)
+
+[node name="AnimationPlayer" type="AnimatedSprite2D" parent="dragonfly1"]
+position = Vector2(0.8928528, 0)
+sprite_frames = SubResource("SpriteFrames_mscdb")
+animation = &"fly_anim"
+frame_progress = 0.82248133
+
+[node name="dragonfly2" type="Area2D" parent="."]
+position = Vector2(547, 329)
+scale = Vector2(1.1200001, 1.1200001)
+script = ExtResource("9_1ltuv")
+
+[node name="Sprite2D" type="Sprite2D" parent="dragonfly2"]
+position = Vector2(1, 0.20000076)
+texture = ExtResource("1_c82a0")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="dragonfly2"]
+position = Vector2(1, -1.7999992)
+polygon = PackedVector2Array(-67.5, -37, -67.5, 7.0999985, -62.5, 9.200001, -62.5, 11.200001, -50.3, 10, -45.2, 10, -27.2, 4, -23.8, 4, -10.5, -5.8999996, -9.5, 34, -9.5, 37, 10.5, 37, 10.5, -5, 15.5, -1.0999985, 15.5, 0.5, 43.5, 8.400002, 43.5, 9.599998, 50.300003, 11, 61.100006, 11, 67.100006, 7, 67.5, -37)
+
+[node name="AnimationPlayer" type="AnimatedSprite2D" parent="dragonfly2"]
+position = Vector2(1, 0)
+sprite_frames = SubResource("SpriteFrames_mscdb")
+animation = &"fly_anim"
+frame_progress = 0.82248133
+
+[node name="dragonfly3" type="Area2D" parent="."]
+position = Vector2(826, 331)
+scale = Vector2(1.1200001, 1.1200001)
+script = ExtResource("9_1ltuv")
+
+[node name="Sprite2D" type="Sprite2D" parent="dragonfly3"]
+position = Vector2(1, 0.20000076)
+texture = ExtResource("1_c82a0")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="dragonfly3"]
+position = Vector2(1, -1.7999992)
+polygon = PackedVector2Array(-67.5, -37, -67.5, 7.0999985, -62.5, 9.200001, -62.5, 11.200001, -50.3, 10, -45.2, 10, -27.2, 4, -23.8, 4, -10.5, -5.8999996, -9.5, 34, -9.5, 37, 10.5, 37, 10.5, -5, 15.5, -1.0999985, 15.5, 0.5, 43.5, 8.400002, 43.5, 9.599998, 50.300003, 11, 61.100006, 11, 67.100006, 7, 67.5, -37)
+
+[node name="AnimationPlayer" type="AnimatedSprite2D" parent="dragonfly3"]
+position = Vector2(1, 0)
+sprite_frames = SubResource("SpriteFrames_mscdb")
+animation = &"fly_anim"
+frame_progress = 0.82248133
+
+[node name="dragonfly4" type="Area2D" parent="."]
+position = Vector2(1099, 332)
+scale = Vector2(1.1200001, 1.1200001)
+script = ExtResource("9_1ltuv")
+
+[node name="Sprite2D" type="Sprite2D" parent="dragonfly4"]
+position = Vector2(1, 0.20000076)
+texture = ExtResource("1_c82a0")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="dragonfly4"]
+position = Vector2(1, -1.7999992)
+polygon = PackedVector2Array(-67.5, -37, -67.5, 7.0999985, -62.5, 9.200001, -62.5, 11.200001, -50.3, 10, -45.2, 10, -27.2, 4, -23.8, 4, -10.5, -5.8999996, -9.5, 34, -9.5, 37, 10.5, 37, 10.5, -5, 15.5, -1.0999985, 15.5, 0.5, 43.5, 8.400002, 43.5, 9.599998, 50.300003, 11, 61.100006, 11, 67.100006, 7, 67.5, -37)
+
+[node name="AnimationPlayer" type="AnimatedSprite2D" parent="dragonfly4"]
+sprite_frames = SubResource("SpriteFrames_mscdb")
+animation = &"fly_anim"
+frame_progress = 0.52777886
+speed_scale = 1.5
+
+[node name="UI_Layer" type="CanvasLayer" parent="."]
+
+[node name="BackButton" type="Button" parent="UI_Layer"]
+offset_left = 145.0
+offset_top = 661.0
+offset_right = 268.0
+offset_bottom = 692.0
+text = "- Back to Menu"
+script = ExtResource("12_1ltuv")

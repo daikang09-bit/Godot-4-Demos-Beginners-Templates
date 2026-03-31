@@ -1,0 +1,312 @@
+[gd_scene load_steps=41 format=3 uid="uid://bemo2r0k81le4"]
+
+[ext_resource type="Script" uid="uid://dca7mwbxci4qt" path="res://Games/01_Piano/Scripts/Main.gd" id="1_come4"]
+[ext_resource type="PackedScene" path="res://Games/01_Piano/Scenes/note_scenes_1.tscn" id="2_h6b6g"]
+[ext_resource type="PackedScene" path="res://Games/01_Piano/Scenes/note_scenes_2.tscn" id="3_dj5px"]
+[ext_resource type="PackedScene" path="res://Games/01_Piano/Scenes/note_scenes_3.tscn" id="4_ve61p"]
+[ext_resource type="PackedScene" path="res://Games/01_Piano/Scenes/note_scenes_4.tscn" id="5_ysu06"]
+[ext_resource type="PackedScene" path="res://Games/01_Piano/Scenes/note_scenes_5.tscn" id="6_7f5uu"]
+[ext_resource type="PackedScene" path="res://Games/01_Piano/Scenes/note_scenes_6.tscn" id="7_3m5tr"]
+[ext_resource type="Texture2D" uid="uid://b2l0ec4nvm8x6" path="res://Games/01_Piano/Sprites/texture/shape 1.png" id="8_qnost"]
+[ext_resource type="Texture2D" uid="uid://bl8obpa43kl61" path="res://Games/01_Piano/Sprites/texture/shape 16.png" id="9_wnkbs"]
+[ext_resource type="Script" uid="uid://dqsrsdjykis6b" path="res://Games/01_Piano/Scripts/PianoKey.gd" id="10_f6a44"]
+[ext_resource type="Texture2D" uid="uid://b0lot23aypoe0" path="res://Games/01_Piano/Sprites/gangqin/button 150001.png" id="11_0cbny"]
+[ext_resource type="Texture2D" uid="uid://clxqvxr6m5gao" path="res://Games/01_Piano/Sprites/gangqin/button 140001.png" id="12_hrvbo"]
+[ext_resource type="Texture2D" uid="uid://bjoviqin31iei" path="res://Games/01_Piano/Sprites/gangqin/button 130001.png" id="13_uypp3"]
+[ext_resource type="Texture2D" uid="uid://bg4dcfsqp5aqn" path="res://Games/01_Piano/Sprites/gangqin/button 120001.png" id="14_blkrb"]
+[ext_resource type="Texture2D" uid="uid://b63x8drfphfdy" path="res://Games/01_Piano/Sprites/gangqin/button 110001.png" id="15_abqjc"]
+[ext_resource type="Texture2D" uid="uid://dh1ydy08ylr1d" path="res://Games/01_Piano/Sprites/gangqin/button 100001.png" id="16_6iyjs"]
+[ext_resource type="Texture2D" uid="uid://dmofxyjjpm478" path="res://Games/01_Piano/Sprites/gangqin/button 90001.png" id="17_4w656"]
+[ext_resource type="Texture2D" uid="uid://dmhd6oysfa0no" path="res://Games/01_Piano/Sprites/gangqin/button 80001.png" id="18_e71vb"]
+[ext_resource type="Texture2D" uid="uid://bsjpixgj2udk8" path="res://Games/01_Piano/Sprites/gangqin/button 70001.png" id="19_rnkwl"]
+[ext_resource type="Texture2D" uid="uid://cnhycendjwnga" path="res://Games/01_Piano/Sprites/gangqin/button 60001.png" id="20_vke2r"]
+[ext_resource type="Texture2D" uid="uid://bjg8nbjkj3bdr" path="res://Games/01_Piano/Sprites/gangqin/button 50001.png" id="21_uit24"]
+[ext_resource type="Texture2D" uid="uid://pxo6gy614ii8" path="res://Games/01_Piano/Sprites/gangqin/button 40001.png" id="22_ruth0"]
+[ext_resource type="Texture2D" uid="uid://cp4vs70vuh05y" path="res://Games/01_Piano/Sprites/gangqin/button 30001.png" id="23_rm4vd"]
+[ext_resource type="Texture2D" uid="uid://b21etennaypow" path="res://Games/01_Piano/Sprites/texture/shape 2.png" id="24_pjyto"]
+[ext_resource type="AudioStream" uid="uid://wqb671wt3q1c" path="res://Games/01_Piano/Audio/sound 0-1.wav" id="25_sm6fg"]
+[ext_resource type="AudioStream" uid="uid://dn1gxfcob2g4d" path="res://Games/01_Piano/Audio/sound 0-2.wav" id="26_b17eg"]
+[ext_resource type="AudioStream" uid="uid://co8e2bd7n41ym" path="res://Games/01_Piano/Audio/sound 0-3.wav" id="27_ntx8l"]
+[ext_resource type="AudioStream" uid="uid://bfu63ewf130mc" path="res://Games/01_Piano/Audio/sound 0-4.wav" id="28_uatky"]
+[ext_resource type="AudioStream" uid="uid://31p3hesvu1iv" path="res://Games/01_Piano/Audio/sound 0-5.wav" id="29_rqtf5"]
+[ext_resource type="AudioStream" uid="uid://p4bjvw6r6jmp" path="res://Games/01_Piano/Audio/sound 0-6.wav" id="30_1vm84"]
+[ext_resource type="AudioStream" uid="uid://clhj252di7et2" path="res://Games/01_Piano/Audio/sound 0-7.wav" id="31_wu3dr"]
+[ext_resource type="AudioStream" uid="uid://k8to3akhltq2" path="res://Games/01_Piano/Audio/sound 0-8.wav" id="32_cyx1q"]
+[ext_resource type="AudioStream" uid="uid://b7qex1bb0u7uy" path="res://Games/01_Piano/Audio/sound 0-9.wav" id="33_0dhbp"]
+[ext_resource type="AudioStream" uid="uid://cxfy4u6g4l8y8" path="res://Games/01_Piano/Audio/sound 0-10.wav" id="34_jx0wj"]
+[ext_resource type="AudioStream" uid="uid://bm0qw07c7hlyn" path="res://Games/01_Piano/Audio/sound 0-11.wav" id="35_kkkcx"]
+[ext_resource type="AudioStream" uid="uid://bm731mtp141sy" path="res://Games/01_Piano/Audio/sound 0-12.wav" id="36_34ol3"]
+[ext_resource type="AudioStream" uid="uid://bpjj7lb6gaa4f" path="res://Games/01_Piano/Audio/sound 0-13.wav" id="37_c2n8d"]
+[ext_resource type="Texture2D" uid="uid://cdvvpam8j0was" path="res://Games/01_Piano/Sprites/texture/button 1.png" id="38_wy5fy"]
+[ext_resource type="Texture2D" uid="uid://deh1sp474cdip" path="res://Games/01_Piano/Sprites/texture/button 2.png" id="39_gx4rg"]
+[ext_resource type="Script" uid="uid://c8x7vs83w3utt" path="res://Scripts/BackButton.gd" id="40_dj5px"]
+
+[node name="Main" type="Node2D" node_paths=PackedStringArray("audio_players")]
+script = ExtResource("1_come4")
+note_scenes = Array[PackedScene]([ExtResource("2_h6b6g"), ExtResource("3_dj5px"), ExtResource("4_ve61p"), ExtResource("5_ysu06"), ExtResource("6_7f5uu"), ExtResource("7_3m5tr")])
+audio_players = [NodePath("AudioPlayers/AudioStreamPlayer1"), NodePath("AudioPlayers/AudioStreamPlayer2"), NodePath("AudioPlayers/AudioStreamPlayer3"), NodePath("AudioPlayers/AudioStreamPlayer4"), NodePath("AudioPlayers/AudioStreamPlayer5"), NodePath("AudioPlayers/AudioStreamPlayer6"), NodePath("AudioPlayers/AudioStreamPlayer7"), NodePath("AudioPlayers/AudioStreamPlayer8"), NodePath("AudioPlayers/AudioStreamPlayer9"), NodePath("AudioPlayers/AudioStreamPlayer10"), NodePath("AudioPlayers/AudioStreamPlayer11"), NodePath("AudioPlayers/AudioStreamPlayer12"), NodePath("AudioPlayers/AudioStreamPlayer13")]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(681.75, 380.93753)
+scale = Vector2(1.0920746, 0.6863656)
+texture = ExtResource("8_qnost")
+
+[node name="Piano" type="Node2D" parent="."]
+position = Vector2(696.5, 386)
+scale = Vector2(1.5063441, 1.0902486)
+
+[node name="Sprite2D" type="Sprite2D" parent="Piano"]
+position = Vector2(2.655426, 195.36829)
+texture = ExtResource("9_wnkbs")
+
+[node name="Key1" type="Area2D" parent="Piano"]
+position = Vector2(-143.39355, 89.88774)
+script = ExtResource("10_f6a44")
+
+[node name="Sprite2D" type="Sprite2D" parent="Piano/Key1"]
+position = Vector2(-2.2037354, -13.801666)
+texture = ExtResource("11_0cbny")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Piano/Key1"]
+visible = false
+position = Vector2(-2.2037354, -13.801666)
+polygon = PackedVector2Array(45, -50.9, 23.800003, -70, 22.5, -70, 21, -69.3, 21, -66.7, -43.1, 31, -44.4, 31, -45, 32.5, -45, 33.800003, -31, 46.9, -31, 48, 0.40000153, 70, 4.299999, 70, 21.300003, 29, 23, 29, 23, 23, 13.099998, 16.099998, 43.300003, -45, 45, -45)
+
+[node name="Key2" type="Area2D" parent="Piano"]
+position = Vector2(-107.633545, 79.79831)
+script = ExtResource("10_f6a44")
+note_index = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="Piano/Key2"]
+position = Vector2(-2.2037354, -13.801666)
+texture = ExtResource("12_hrvbo")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Piano/Key2"]
+visible = false
+position = Vector2(-2.2037354, -13.801666)
+polygon = PackedVector2Array(23, -30.5, 8.5, -40.5, 7.5, -40.5, 6, -39.7, 6, -37, -22.3, 22.5, -23.4, 22.5, -24, 24.099998, -24, 25.5, -7, 38.4, -7, 39.9, -5.3999996, 40.5, -4, 40.5, -1, 36.5, 0.39999962, 36.5, 22.400002, -23.5, 24, -23.5, 24, -25.9, 23, -28.9)
+
+[node name="Key3" type="Area2D" parent="Piano"]
+position = Vector2(-105.55356, 118.32164)
+script = ExtResource("10_f6a44")
+note_index = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="Piano/Key3"]
+position = Vector2(-2.2037354, -13.801666)
+texture = ExtResource("13_uypp3")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Piano/Key3"]
+visible = false
+position = Vector2(-2.2037354, -13.801666)
+polygon = PackedVector2Array(36.5, -58.6, 23, -66.5, 21.900002, -66.5, 20.5, -65.7, 20.5, -63.1, -4.5, -1.9000015, -4.5, 0.69999695, -5.299999, 1.5, -6, 1.5, -15, -3.5, -17.8, -3.5, -34.8, 37.5, -35.9, 37.5, -36.5, 39.1, -36.5, 40.5, -27.5, 47.4, -27.5, 48.699997, 8, 66.5, 12.099998, 66.5, 23, 22.5, 24.5, 22.5, 24.5, 16.199997, 15.5, 12.199997, 15.5, 9.699997, 35, -52.5, 36.5, -52.5)
+
+[node name="Key4" type="Area2D" parent="Piano"]
+position = Vector2(-71.29739, 100.79834)
+script = ExtResource("10_f6a44")
+note_index = 4
+
+[node name="Sprite2D" type="Sprite2D" parent="Piano/Key4"]
+position = Vector2(-2.2037354, -13.801666)
+texture = ExtResource("14_blkrb")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Piano/Key4"]
+position = Vector2(-2.2037354, -13.801666)
+polygon = PackedVector2Array(19, -32.8, 4.299999, -39.5, 2, -39.5, 2, -35.8, -17.5, 25.5, -19, 25.5, -19, 31.900002, -3, 37.9, -3, 39, -1.2999992, 39.5, 0, 39.5, 2.1000004, 36.5, 3.6000004, 36.5, 17.599998, -26.5, 19, -26.5)
+
+[node name="Key5" type="Area2D" parent="Piano"]
+position = Vector2(-62.297394, 133.79831)
+script = ExtResource("10_f6a44")
+note_index = 5
+
+[node name="Sprite2D" type="Sprite2D" parent="Piano/Key5"]
+position = Vector2(-2.2037354, -13.801666)
+texture = ExtResource("15_abqjc")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Piano/Key5"]
+position = Vector2(-2.2037354, -13.801666)
+polygon = PackedVector2Array(32, -57.9, 10.200001, -65.5, 8, -65.5, 8, -60.5, -8, 2.300003, -8, 4.699997, -8.799999, 5.5, -9.5, 5.5, -16.5, 1.5, -19.6, 1.5, -30.5, 45.5, -32, 45.5, -32, 51.9, -23, 54.9, -23, 56, 10.700001, 65.5, 15.700001, 65.5, 32, -51.4)
+
+[node name="Key6" type="Area2D" parent="Piano"]
+position = Vector2(-24.297394, 139.79831)
+script = ExtResource("10_f6a44")
+note_index = 6
+
+[node name="Sprite2D" type="Sprite2D" parent="Piano/Key6"]
+position = Vector2(-2.2037354, -13.801666)
+texture = ExtResource("16_6iyjs")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Piano/Key6"]
+position = Vector2(-2.2037354, -13.801666)
+polygon = PackedVector2Array(17, -60.2, -6, -63.5, -8, -63.5, -8, -57.5, -24, 52.4, -24, 60.199997, -2.1000004, 63.5, 24, 63.5, 24, 13.900002, 14, 11.599998, 17, -50.5)
+
+[node name="Key7" type="Area2D" parent="Piano"]
+position = Vector2(-0.29736328, 116.79834)
+script = ExtResource("10_f6a44")
+note_index = 7
+
+[node name="Sprite2D" type="Sprite2D" parent="Piano/Key7"]
+position = Vector2(-2.2037354, -13.801666)
+texture = ExtResource("17_4w656")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Piano/Key7"]
+position = Vector2(-2.2037354, -13.801666)
+polygon = PackedVector2Array(9.5, -37, -7.5, -37, -7.5, -34, -10.5, 34.699997, -10.5, 37, 10.5, 37, 9.5, -6)
+
+[node name="Key8" type="Area2D" parent="Piano"]
+position = Vector2(21.702606, 140.79834)
+script = ExtResource("10_f6a44")
+note_index = 8
+
+[node name="Sprite2D" type="Sprite2D" parent="Piano/Key8"]
+position = Vector2(-2.2037354, -13.801666)
+texture = ExtResource("18_e71vb")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Piano/Key8"]
+position = Vector2(-2.2037354, -13.801666)
+polygon = PackedVector2Array(-5, -62, -5, -60.8, -10.3, -60, -14.1, -60, -12, -4.9000015, -12, 11.900002, -15, 13.900002, -23, 14, -23, 62.199997, 17.2, 58, 23.3, 58, 18, 15.800003, 18, 10, 8.700001, 10, 7.700001, 4, 6.799999, 4, 3, -41.2, 3, -55, 2, -55, 2, -62)
+
+[node name="Key9" type="Area2D" parent="Piano"]
+position = Vector2(36.702637, 112.79834)
+script = ExtResource("10_f6a44")
+note_index = 9
+
+[node name="Sprite2D" type="Sprite2D" parent="Piano/Key9"]
+position = Vector2(-2.2037354, -13.801666)
+texture = ExtResource("19_rnkwl")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Piano/Key9"]
+position = Vector2(-2.2037354, -13.801666)
+polygon = PackedVector2Array(1.1999998, -37.6, -2.5, -37.3, -2.5, -36, -7.6, -34.5, -12.7, -34.5, -7.5, 22.7, -7.5, 36.9, 9.9, 33.5, 12.9, 33.5)
+
+[node name="Key10" type="Area2D" parent="Piano"]
+position = Vector2(65.70264, 133.79831)
+script = ExtResource("10_f6a44")
+note_index = 10
+
+[node name="Sprite2D" type="Sprite2D" parent="Piano/Key10"]
+position = Vector2(-2.2037354, -13.801666)
+texture = ExtResource("20_vke2r")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Piano/Key10"]
+position = Vector2(-2.2037354, -13.801666)
+polygon = PackedVector2Array(-13.4, -64.2, -17, -63.8, -17, -62.3, -22.3, -60, -26.3, -60, -15.7, 9, -16, 12.800003, -16, 13.5, -23.3, 16, -26.3, 16, -21, 58.199997, -21, 64.7, 21.3, 52, 26.599998, 52, 15, 8, 15, 2.0999985, 4.3999996, 6, 1.7000008, 4)
+
+[node name="Key11" type="Area2D" parent="Piano"]
+position = Vector2(72.70264, 100.79834)
+script = ExtResource("10_f6a44")
+note_index = 11
+
+[node name="Sprite2D" type="Sprite2D" parent="Piano/Key11"]
+position = Vector2(-2.2037354, -13.801666)
+texture = ExtResource("21_uit24")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Piano/Key11"]
+position = Vector2(-2.2037354, -13.801666)
+polygon = PackedVector2Array(-4.8999996, -38.3, -7, -37.2, -7, -36.5, -18, -32.4, -18, -25.8, -5, 30, -5, 35.800003, -2.7999992, 38, 1.5, 38, 14.5, 31, 18.7, 31, 0, -30.3, 0, -35.1)
+
+[node name="Key12" type="Area2D" parent="Piano"]
+position = Vector2(103.70264, 116.79834)
+script = ExtResource("10_f6a44")
+note_index = 12
+
+[node name="Sprite2D" type="Sprite2D" parent="Piano/Key12"]
+position = Vector2(-2.2037354, -14.718903)
+texture = ExtResource("22_ruth0")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Piano/Key12"]
+position = Vector2(-2.2037354, -14.718903)
+polygon = PackedVector2Array(34.5, 46.5, -13.299999, -67.8, -16.5, -67.1, -16.5, -65.7, -33.5, -55.6, -33.5, -52.2, -14.200001, 14, -14.5, 15.199997, -14.5, 16.199997, -21, 19.5, -25.1, 19.5, -13.5, 63.5, -13.5, 69.5, 31, 46.5)
+
+[node name="Key13" type="Area2D" parent="Piano"]
+position = Vector2(139.92567, 90.80498)
+script = ExtResource("10_f6a44")
+note_index = 13
+
+[node name="Sprite2D" type="Sprite2D" parent="Piano/Key13"]
+position = Vector2(-2.2037354, -13.801666)
+texture = ExtResource("23_rm4vd")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Piano/Key13"]
+position = Vector2(-2.2037354, -13.801666)
+polygon = PackedVector2Array(-22.5, -71.5, -49.5, -48.2, -49.5, -29.400002, -7.5, 69.8, -7.5, 71.5, 5.5999985, 71.5, 9.200001, 68.5, 11.200001, 68.5, 48.199997, 37.5, 49.5, 37.5, 49.5, 24.300003, -6.5, -60.2, -6.5, -62.2, -13.5, -71.2)
+
+[node name="NoteDisplayArea" type="Node2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(332.5, -33)
+
+[node name="Sprite2D" type="Sprite2D" parent="NoteDisplayArea"]
+position = Vector2(351, 192)
+texture = ExtResource("24_pjyto")
+
+[node name="AudioPlayers" type="Node2D" parent="."]
+position = Vector2(0.5, -2)
+
+[node name="AudioStreamPlayer1" type="AudioStreamPlayer" parent="AudioPlayers"]
+stream = ExtResource("25_sm6fg")
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="AudioPlayers"]
+stream = ExtResource("26_b17eg")
+
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="AudioPlayers"]
+stream = ExtResource("27_ntx8l")
+
+[node name="AudioStreamPlayer4" type="AudioStreamPlayer" parent="AudioPlayers"]
+stream = ExtResource("28_uatky")
+
+[node name="AudioStreamPlayer5" type="AudioStreamPlayer" parent="AudioPlayers"]
+stream = ExtResource("29_rqtf5")
+
+[node name="AudioStreamPlayer6" type="AudioStreamPlayer" parent="AudioPlayers"]
+stream = ExtResource("30_1vm84")
+
+[node name="AudioStreamPlayer7" type="AudioStreamPlayer" parent="AudioPlayers"]
+stream = ExtResource("31_wu3dr")
+
+[node name="AudioStreamPlayer8" type="AudioStreamPlayer" parent="AudioPlayers"]
+stream = ExtResource("32_cyx1q")
+
+[node name="AudioStreamPlayer9" type="AudioStreamPlayer" parent="AudioPlayers"]
+stream = ExtResource("33_0dhbp")
+
+[node name="AudioStreamPlayer10" type="AudioStreamPlayer" parent="AudioPlayers"]
+stream = ExtResource("34_jx0wj")
+
+[node name="AudioStreamPlayer11" type="AudioStreamPlayer" parent="AudioPlayers"]
+stream = ExtResource("35_kkkcx")
+
+[node name="AudioStreamPlayer12" type="AudioStreamPlayer" parent="AudioPlayers"]
+stream = ExtResource("36_34ol3")
+
+[node name="AudioStreamPlayer13" type="AudioStreamPlayer" parent="AudioPlayers"]
+stream = ExtResource("37_c2n8d")
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="PlayButton" type="Button" parent="UI"]
+unique_name_in_owner = true
+offset_left = 1095.0
+offset_top = 359.0
+offset_right = 1157.0
+offset_bottom = 420.0
+icon = ExtResource("38_wy5fy")
+metadata/_edit_use_anchors_ = true
+
+[node name="ClearButton" type="Button" parent="UI"]
+unique_name_in_owner = true
+offset_left = 1063.0
+offset_top = 506.0
+offset_right = 1154.0
+offset_bottom = 568.0
+icon = ExtResource("39_gx4rg")
+metadata/_edit_use_anchors_ = true
+
+[node name="UI_Layer" type="CanvasLayer" parent="."]
+
+[node name="BackButton" type="Button" parent="UI_Layer"]
+offset_left = 145.0
+offset_top = 661.0
+offset_right = 268.0
+offset_bottom = 692.0
+text = "- Back to Menu"
+script = ExtResource("40_dj5px")
+metadata/_edit_use_anchors_ = true

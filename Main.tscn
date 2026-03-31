@@ -1,0 +1,152 @@
+[gd_scene load_steps=4 format=3 uid="uid://wtthanpbgrtd"]
+
+[ext_resource type="Script" uid="uid://cpori4e0l2610" path="res://Scripts/MainMenu.gd" id="1_glv2v"]
+[ext_resource type="Texture2D" uid="uid://bmlhw3f416r7h" path="res://Sprites/logo1.png" id="2_uu6xs"]
+[ext_resource type="Script" uid="uid://djxi5b53u6jhq" path="res://Scripts/CollectionMenu.gd" id="3_r0du0"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_glv2v")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(678, 120)
+texture = ExtResource("2_uu6xs")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = -45.0
+offset_top = -48.0
+offset_right = -5.0
+offset_bottom = -8.0
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 212.0
+offset_right = 1309.0
+offset_bottom = 519.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="HSeparator" type="HSeparator" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="LeftCol" type="VBoxContainer" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+clip_contents = true
+layout_mode = 2
+theme_override_constants/separation = 9
+
+[node name="Btn_1" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer/LeftCol"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_font_sizes/font_size = 23
+text = "[01]  Piano Melody - Sequence Recording & Playback (G 4.x)"
+alignment = 0
+
+[node name="Btn_2" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer/LeftCol"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 23
+text = "[02] Coloring Game - Logic & Color Mixing (G 4.x)"
+alignment = 0
+
+[node name="Btn_3" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer/LeftCol"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 23
+text = "[03] Fish Game - Jump & Auto-Loop Movement (G 4.x)"
+alignment = 0
+
+[node name="Btn_4" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer/LeftCol"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 23
+text = "[04] Dragonfly Puzzle - Logic Judge & Node Arrays (G 4.x)"
+alignment = 0
+
+[node name="Btn_5" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer/LeftCol"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 23
+text = "[05] Lucky Duck - Random Probability & Game Loops (G 4.x)"
+alignment = 0
+
+[node name="RightCol" type="VBoxContainer" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+visible = false
+layout_mode = 2
+
+[node name="Btn_6" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer/RightCol"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "[06] Balloon Pop Drop - Physics & Array Spawning (G 4.x)"
+alignment = 0
+
+[node name="Btn_7" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer/RightCol"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "[07] Musical Flowers - Drag Mapping & Audio Normalization (G 4.x)"
+alignment = 0
+
+[node name="Btn_8" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer/RightCol"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "[08] Butterfly Escape - Object Pooling & Randomization (G 4.x)"
+alignment = 0
+
+[node name="Btn_9" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer/RightCol"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "[09] Swing & Seesaw - Damped Harmonic Oscillation (G 4.x)"
+alignment = 0
+
+[node name="Btn_10" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer/RightCol"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "[10] Trash Sorting - Drag-and-Drop Logic & Distance Validation (G 4.x)"
+alignment = 0
+
+[node name="MarginContainer2" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_left = 407.0
+offset_top = 636.0
+offset_right = 1676.0
+offset_bottom = 839.0
+scale = Vector2(0.92, 0.92)
+
+[node name="Label" type="Label" parent="MarginContainer2"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.82, 0.82, 0.82, 1)
+theme_override_font_sizes/font_size = 30
+text = "Godot 4 2D Game Examples Templates "
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="suppport" type="MarginContainer" parent="Node2D"]
+layout_direction = 2
+offset_left = 38.0
+offset_top = 578.0
+offset_right = 1350.0
+offset_bottom = 618.0
+
+[node name="BtnItchSupport" type="Label" parent="Node2D/suppport"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9775341, 0.95685, 0.5491992, 1)
+text = "Your support is our fuel. Early followers will continue to enjoy all future updates and new game templates for FREE. More high-quality Godot 4 logic is already on the way!\""
+
+[node name="rate" type="MarginContainer" parent="Node2D"]
+layout_direction = 2
+offset_left = 599.0
+offset_top = 636.0
+offset_right = 739.0
+offset_bottom = 676.0
+
+[node name="BtnItchSupport" type="Button" parent="Node2D/rate"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9775341, 0.95685, 0.5491992, 1)
+text = "⭐ Rate & Follow"
+script = ExtResource("3_r0du0")

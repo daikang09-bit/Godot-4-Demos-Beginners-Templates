@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cpvx3leb7bfsy"]
+
+[ext_resource type="Texture2D" uid="uid://cvd8iwlqlgvd8" path="res://Sprites/shape 1.png" id="1_k583q"]
+[ext_resource type="Script" uid="uid://dfqtxbttguydy" path="res://Scripts/flsh.gd" id="1_pbchd"]
+
+[node name="flsh" type="CharacterBody2D"]
+script = ExtResource("1_pbchd")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = -0.80576116
+texture = ExtResource("1_k583q")

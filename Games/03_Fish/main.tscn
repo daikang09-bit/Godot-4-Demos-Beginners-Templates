@@ -1,0 +1,47 @@
+[gd_scene load_steps=7 format=3 uid="uid://cv8sb75iyl4ai"]
+
+[ext_resource type="Script" uid="uid://7q8q71g6t5um" path="res://Games/03_Fish/Scripts/touch.gd" id="1_lquwl"]
+[ext_resource type="Texture2D" uid="uid://dey7lkdeklixk" path="res://Games/03_Fish/Sprites/21.png" id="2_7mycd"]
+[ext_resource type="PackedScene" uid="uid://cpvx3leb7bfsy" path="res://Games/03_Fish/Scenes/flsh.tscn" id="3_272bh"]
+[ext_resource type="Texture2D" uid="uid://bipgtvypalj8e" path="res://Games/03_Fish/Sprites/22.png" id="4_5vw27"]
+[ext_resource type="PackedScene" uid="uid://dqjq88bb4hkva" path="res://Games/03_Fish/Scenes/player.tscn" id="5_kek77"]
+[ext_resource type="Script" uid="uid://c8x7vs83w3utt" path="res://Scripts/BackButton.gd" id="6_cuk1i"]
+
+[node name="Main" type="Node2D" node_paths=PackedStringArray("target_node")]
+script = ExtResource("1_lquwl")
+target_node = NodePath("Fish")
+
+[node name="Ground" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Ground"]
+position = Vector2(0, -83)
+scale = Vector2(1.0692725, 1.0032873)
+texture = ExtResource("2_7mycd")
+
+[node name="Fish" parent="." instance=ExtResource("3_272bh")]
+position = Vector2(-217.99998, 159)
+scale = Vector2(0.4400006, 0.4400006)
+
+[node name="water" type="Sprite2D" parent="."]
+position = Vector2(0.99999994, 244.00002)
+scale = Vector2(1.0678817, 1.4283004)
+texture = ExtResource("4_5vw27")
+
+[node name="player" parent="." instance=ExtResource("5_kek77")]
+position = Vector2(-589, -53)
+scale = Vector2(0.40003544, 0.40527543)
+speed = 500.0
+
+[node name="UI_Layer" type="CanvasLayer" parent="."]
+
+[node name="BackButton" type="Button" parent="UI_Layer"]
+offset_left = 145.0
+offset_top = 661.0
+offset_right = 268.0
+offset_bottom = 692.0
+text = "- Back to Menu"
+script = ExtResource("6_cuk1i")
+metadata/_edit_use_anchors_ = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+metadata/_edit_lock_ = true

@@ -1,0 +1,162 @@
+[gd_scene load_steps=14 format=3 uid="uid://c4cbaq3iyawch"]
+
+[ext_resource type="Script" uid="uid://eu63ivm6i4y0" path="res://Games/05_Duck/Scripts/Director.gd" id="1_dg77c"]
+[ext_resource type="Texture2D" uid="uid://bexw0ceaqftmj" path="res://Games/05_Duck/Sprites/ground-2.png" id="2_ycdy4"]
+[ext_resource type="Texture2D" uid="uid://b8myo5e7jjkc6" path="res://Games/05_Duck/Sprites/ground-1.png" id="3_w48qg"]
+[ext_resource type="Texture2D" uid="uid://b3kkya6whrl6g" path="res://Games/05_Duck/Sprites/shape 1.png" id="4_vivmo"]
+[ext_resource type="Texture2D" uid="uid://brfcnhpemfyhg" path="res://Games/05_Duck/Sprites/sprite 9.png" id="5_2cqfq"]
+[ext_resource type="Texture2D" uid="uid://cfslcwt0ayxr2" path="res://Games/05_Duck/Sprites/sprite 4.png" id="6_yaehf"]
+[ext_resource type="AudioStream" uid="uid://bnrm4qm7tog1i" path="res://Games/05_Duck/Audio/sound 12.mp3" id="7_074og"]
+[ext_resource type="Script" uid="uid://bcd14gstb1ysi" path="res://Games/05_Duck/Scripts/duck.gd" id="8_cegan"]
+[ext_resource type="Texture2D" uid="uid://cwrk78sf647y7" path="res://Games/05_Duck/Sprites/shape 6.png" id="9_82xsv"]
+[ext_resource type="Texture2D" uid="uid://glayhyma25h4" path="res://Games/05_Duck/Sprites/shape 10.png" id="10_getpj"]
+[ext_resource type="AudioStream" uid="uid://b2utqpl40cqgg" path="res://Games/05_Duck/Audio/streamsound 2.mp3" id="11_ryguw"]
+[ext_resource type="Texture2D" uid="uid://uvrfm61xdohi" path="res://Games/05_Duck/Sprites/shape 4 (Up Over Down Hit).png" id="12_d13ii"]
+[ext_resource type="Script" uid="uid://c8x7vs83w3utt" path="res://Scripts/BackButton.gd" id="13_a532f"]
+
+[node name="MainScene" type="Node2D" node_paths=PackedStringArray("head", "audio_player")]
+script = ExtResource("1_dg77c")
+head = NodePath("Head")
+audio_player = NodePath("WinAudio")
+
+[node name="ground" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="ground"]
+position = Vector2(-15.999999, -221.99998)
+scale = Vector2(1.5200005, 1.5200005)
+texture = ExtResource("2_ycdy4")
+
+[node name="Sprite2D2" type="Sprite2D" parent="ground"]
+position = Vector2(382, -222)
+texture = ExtResource("3_w48qg")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ground"]
+position = Vector2(-208, 378)
+scale = Vector2(1.760001, 1.760001)
+texture = ExtResource("4_vivmo")
+
+[node name="Sprite2D5" type="Sprite2D" parent="ground"]
+position = Vector2(-205, 129)
+texture = ExtResource("5_2cqfq")
+
+[node name="Sprite2D6" type="Sprite2D" parent="ground"]
+position = Vector2(-246, 122)
+texture = ExtResource("5_2cqfq")
+
+[node name="Sprite2D7" type="Sprite2D" parent="ground"]
+position = Vector2(-333, 58)
+texture = ExtResource("6_yaehf")
+
+[node name="WinAudio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_074og")
+
+[node name="Head" type="Node2D" parent="."]
+
+[node name="Duck1" type="Area2D" parent="Head" node_paths=PackedStringArray("director", "leaf", "music")]
+position = Vector2(-358, 175)
+scale = Vector2(1.4800012, 1.4800012)
+script = ExtResource("8_cegan")
+director = NodePath("../..")
+leaf = NodePath("Leaf")
+music = NodePath("DuckAudio")
+
+[node name="Sprite2D" type="Sprite2D" parent="Head/Duck1"]
+position = Vector2(0.2000122, -0.6000061)
+texture = ExtResource("9_82xsv")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Head/Duck1"]
+position = Vector2(0.2000122, -0.6000061)
+polygon = PackedVector2Array(-6.9000015, -44, -32, -44, -48, -33.1, -62, -30.1, -62, -18, -48.1, -17, -42.5, -17, -32.5, -12, -29, -5.5, -29, 1, -34, 19.7, -34, 26.800003, -21, 39.800003, -21, 41.300003, -15, 44, 35.9, 44, 47.5, 37, 49.9, 37, 56.9, 29, 58.4, 29, 62, 20, 62, -7.9000015, 53.5, -3, 48.699997, -3, 43, -7.9000015, 43, -9.700001, 36, -10.799999, 36, -12.1, 1.9000015, -11, -1.7999992, -11, -3.5999985, -14.6, -0.5, -26, 1.7000008, -26, -2, -38.3, -2, -41.1)
+
+[node name="Leaf" type="Sprite2D" parent="Head/Duck1"]
+position = Vector2(-55.799988, -11.600006)
+texture = ExtResource("10_getpj")
+
+[node name="DuckAudio" type="AudioStreamPlayer" parent="Head/Duck1"]
+stream = ExtResource("11_ryguw")
+
+[node name="Duck2" type="Area2D" parent="Head" node_paths=PackedStringArray("director", "leaf", "music")]
+position = Vector2(-110, 177)
+script = ExtResource("8_cegan")
+director = NodePath("../..")
+leaf = NodePath("Leaf")
+music = NodePath("DuckAudio")
+flag_index = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="Head/Duck2"]
+position = Vector2(0.2000122, -0.6000061)
+texture = ExtResource("9_82xsv")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Head/Duck2"]
+position = Vector2(0.2000122, -0.6000061)
+polygon = PackedVector2Array(-6.9000015, -44, -32, -44, -48, -33.1, -62, -30.1, -62, -18, -48.1, -17, -42.5, -17, -32.5, -12, -29, -5.5, -29, 1, -34, 19.7, -34, 26.800003, -21, 39.800003, -21, 41.300003, -15, 44, 35.9, 44, 47.5, 37, 49.9, 37, 56.9, 29, 58.4, 29, 62, 20, 62, -7.9000015, 53.5, -3, 48.699997, -3, 43, -7.9000015, 43, -9.700001, 36, -10.799999, 36, -12.1, 1.9000015, -11, -1.7999992, -11, -3.5999985, -14.6, -0.5, -26, 1.7000008, -26, -2, -38.3, -2, -41.1)
+
+[node name="Leaf" type="Sprite2D" parent="Head/Duck2"]
+position = Vector2(-55.799988, -11.600006)
+texture = ExtResource("10_getpj")
+
+[node name="DuckAudio" type="AudioStreamPlayer" parent="Head/Duck2"]
+stream = ExtResource("11_ryguw")
+
+[node name="Duck3" type="Area2D" parent="Head" node_paths=PackedStringArray("director", "leaf", "music")]
+position = Vector2(150, 173)
+script = ExtResource("8_cegan")
+director = NodePath("../..")
+leaf = NodePath("Leaf")
+music = NodePath("DuckAudio")
+flag_index = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="Head/Duck3"]
+position = Vector2(0.2000122, -0.6000061)
+texture = ExtResource("9_82xsv")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Head/Duck3"]
+position = Vector2(0.2000122, -0.6000061)
+polygon = PackedVector2Array(-6.9000015, -44, -32, -44, -48, -33.1, -62, -30.1, -62, -18, -48.1, -17, -42.5, -17, -32.5, -12, -29, -5.5, -29, 1, -34, 19.7, -34, 26.800003, -21, 39.800003, -21, 41.300003, -15, 44, 35.9, 44, 47.5, 37, 49.9, 37, 56.9, 29, 58.4, 29, 62, 20, 62, -7.9000015, 53.5, -3, 48.699997, -3, 43, -7.9000015, 43, -9.700001, 36, -10.799999, 36, -12.1, 1.9000015, -11, -1.7999992, -11, -3.5999985, -14.6, -0.5, -26, 1.7000008, -26, -2, -38.3, -2, -41.1)
+
+[node name="Leaf" type="Sprite2D" parent="Head/Duck3"]
+position = Vector2(-55.799988, -11.600006)
+texture = ExtResource("10_getpj")
+
+[node name="DuckAudio" type="AudioStreamPlayer" parent="Head/Duck3"]
+stream = ExtResource("11_ryguw")
+
+[node name="Duck4" type="Area2D" parent="Head" node_paths=PackedStringArray("director", "leaf", "music")]
+position = Vector2(385, 171)
+script = ExtResource("8_cegan")
+director = NodePath("../..")
+leaf = NodePath("Leaf")
+music = NodePath("DuckAudio")
+flag_index = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="Head/Duck4"]
+position = Vector2(0.2000122, -0.6000061)
+texture = ExtResource("9_82xsv")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Head/Duck4"]
+position = Vector2(0.2000122, -0.6000061)
+polygon = PackedVector2Array(-6.9000015, -44, -32, -44, -48, -33.1, -62, -30.1, -62, -18, -48.1, -17, -42.5, -17, -32.5, -12, -29, -5.5, -29, 1, -34, 19.7, -34, 26.800003, -21, 39.800003, -21, 41.300003, -15, 44, 35.9, 44, 47.5, 37, 49.9, 37, 56.9, 29, 58.4, 29, 62, 20, 62, -7.9000015, 53.5, -3, 48.699997, -3, 43, -7.9000015, 43, -9.700001, 36, -10.799999, 36, -12.1, 1.9000015, -11, -1.7999992, -11, -3.5999985, -14.6, -0.5, -26, 1.7000008, -26, -2, -38.3, -2, -41.1)
+
+[node name="Leaf" type="Sprite2D" parent="Head/Duck4"]
+position = Vector2(-55.799988, -11.600006)
+texture = ExtResource("10_getpj")
+
+[node name="DuckAudio" type="AudioStreamPlayer" parent="Head/Duck4"]
+stream = ExtResource("11_ryguw")
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+position = Vector2(-14.0000305, 395)
+scale = Vector2(2.1179857, 1.3423069)
+texture = ExtResource("12_d13ii")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="UI_Layer" type="CanvasLayer" parent="."]
+
+[node name="BackButton" type="Button" parent="UI_Layer"]
+offset_left = 145.0
+offset_top = 661.0
+offset_right = 268.0
+offset_bottom = 692.0
+text = "- Back to Menu"
+script = ExtResource("13_a532f")

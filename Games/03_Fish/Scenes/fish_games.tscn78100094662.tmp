@@ -1,0 +1,68 @@
+[gd_scene load_steps=10 format=3 uid="uid://d0r257lxuapgf"]
+
+[ext_resource type="Texture2D" uid="uid://nkt5j7f6v4oi" path="res://Sprites/ground-2.png" id="1_iqe06"]
+[ext_resource type="Texture2D" uid="uid://uext27323gql" path="res://Sprites/ground-1.png" id="2_yr4g8"]
+[ext_resource type="Texture2D" uid="uid://c1qkqh8aoy77l" path="res://Sprites/ground-4.png" id="3_stnjn"]
+[ext_resource type="Texture2D" uid="uid://bhi4kpka01lg8" path="res://Sprites/ground-5.png" id="4_0n75f"]
+[ext_resource type="Texture2D" uid="uid://kf28fdb7t1os" path="res://Sprites/ground-6.png" id="5_knba3"]
+[ext_resource type="Texture2D" uid="uid://btw74mb5ltqt7" path="res://Sprites/ground-3.png" id="6_y3mpa"]
+[ext_resource type="Texture2D" uid="uid://5n06vqkw1i0x" path="res://Sprites/ground-7.png" id="7_stnjn"]
+[ext_resource type="PackedScene" uid="uid://dqjq88bb4hkva" path="res://Scenes/player.tscn" id="8_0n75f"]
+[ext_resource type="PackedScene" uid="uid://cpvx3leb7bfsy" path="res://Scenes/flsh.tscn" id="8_knba3"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-1, -99)
+scale = Vector2(1.0400451, 0.64842904)
+texture = ExtResource("1_iqe06")
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(-408, -201.99998)
+scale = Vector2(1.4285715, 1.4285715)
+texture = ExtResource("2_yr4g8")
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(5, 294)
+scale = Vector2(1.7075472, 1)
+texture = ExtResource("3_stnjn")
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+position = Vector2(-54, -36)
+scale = Vector2(0.6158941, 0.6158941)
+texture = ExtResource("4_0n75f")
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D5" type="Sprite2D" parent="."]
+position = Vector2(36.999996, 25)
+scale = Vector2(0.56914896, 0.56914896)
+texture = ExtResource("5_knba3")
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D6" type="Sprite2D" parent="."]
+position = Vector2(5, 404)
+texture = ExtResource("6_y3mpa")
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D7" type="Sprite2D" parent="."]
+position = Vector2(-11, 252)
+scale = Vector2(0.8170928, 0.54246414)
+texture = ExtResource("7_stnjn")
+metadata/_edit_lock_ = true
+
+[node name="flsh" parent="." instance=ExtResource("8_knba3")]
+position = Vector2(-319, 103.99999)
+rotation = 0.032317787
+scale = Vector2(0.40003544, 0.40527543)
+
+[node name="player" parent="." instance=ExtResource("8_0n75f")]
+position = Vector2(-588, -17)
+scale = Vector2(0.40003544, 0.40527543)
+speed = 500.0
+right_x = 600.0
+
+[node name="Camera2D" type="Camera2D" parent="."]
+metadata/_edit_lock_ = true
