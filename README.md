@@ -1,4 +1,3 @@
-===========================================================
 Godot 4 2D Example Templates (The Starter Collection)
 ===========================================================
 Author: Godot Example Hub
