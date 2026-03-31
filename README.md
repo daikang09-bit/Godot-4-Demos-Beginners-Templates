@@ -18,7 +18,6 @@ If these templates saved your learning or development time, please consider givi
 Permanent Access: Following/Supporting this project now ensures you keep all 10 current templates for FREE even if the project model changes later.
 <img width="1379" height="780" alt="image" src="https://github.com/user-attachments/assets/3974bed3-7ce9-4ed7-9b82-85e47aa39dca" />
 
-
 -----------------------------------------------------------
 1. TEMPLATE OVERVIEW & HIGHLIGHTS
 -----------------------------------------------------------
@@ -34,28 +33,28 @@ Permanent Access: Following/Supporting this project now ensures you keep all 10 
   focus effects, and additive color mixing logic.
 - Gameplay Instructions: Click the butterfly or bee to zoom in. Select a color to paint. Click an empty area to return the coloring module to its original position. Different colors can be mixed to create new colors.
 - File: 02_coloring.zip
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/337ee6af-4e23-4905-b1e4-090aca46071a" />
+![2](https://github.com/user-attachments/assets/0be5b4f8-c0b4-4a88-b658-b7bc4d5c14f3)
 
 #[03] Fish Game - Jump & Auto-Loop Movement (G 4.x)
 - Highlights: Parabolic jumps (TRANS_QUAD), input state locking, 
   and random object respawning (Endless Runner style).
 - Gameplay Instructions: Click the screen to make the fish jump out of the water. A sound plays when the fish’s mouth hits a fly. The fish then rotates and falls back into the water. Each successful hit increases the fly’s speed for the next round.
 - File: 03_fish.zip
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/786d4780-1f04-42ce-b312-85e68a6e429d" />
+![3](https://github.com/user-attachments/assets/cac5bcc8-451b-4b51-88de-2983220fec5f)
 
 #[04] Dragonfly Puzzle - Logic Judge & Node Arrays (G 4.x)
 - Highlights: Global logic judgment via Array[Node2D], signals, 
   and normalized angle handling (0°-270° logic).
 - Gameplay Instructions: At the start, four dragonflies face different directions. Click a dragonfly to rotate it 90 degrees clockwise. When all dragonflies face the same direction, they play an animation and a sound, then fly out of the scene.
 - File: 04_dragonfly.zip
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c4f37a8e-c4e9-4251-95ad-69655ddfe32f" />
+![4](https://github.com/user-attachments/assets/405b5b22-76be-4f3f-891d-40d3223d5679)
 
 #[05] Lucky Duck - Random Probability & Game Loops (G 4.x)
 - Highlights: Random probability (randi() % 2), asynchronous 
   delays (await), and automatic game reset architecture.
 - Gameplay Instructions:Four ducks appear at the start. Click a duck to rotate it 90 degrees counterclockwise and return. Each duck randomly catches a leaf from the water. When all ducks have a leaf in their mouths, a sound plays and the ducks swim out of the scene.
 - File: 05_duck.zip
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/614d2c6f-dcb5-4f0f-946b-d0227eabd8cd" />
+![5](https://github.com/user-attachments/assets/6e56666c-0c56-486d-988d-c37f2ecd106e)
 
 -----------------------------------------------------------
 2. GETTING STARTED
