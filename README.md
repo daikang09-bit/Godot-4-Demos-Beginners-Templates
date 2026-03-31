@@ -79,7 +79,7 @@ Found a bug or have a suggestion? Leave a comment on the
 page! If these templates helped you, consider 
 dropping a small tip to keep the updates coming.
 
-===========================================================
+==============================
 KEEP BUILDING, KEEP LEARNING! 🚀
-===========================================================
+==============================
 
