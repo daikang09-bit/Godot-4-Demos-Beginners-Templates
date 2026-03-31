@@ -17,6 +17,7 @@ https://godotexamplehub.itch.io/godot4-lesson1
 ⭐ Why Support Now?
 If these templates saved your learning or development time, please consider giving us a ⭐ Rate & Follow!
 Permanent Access: Following/Supporting this project now ensures you keep all 10 current templates for FREE even if the project model changes later.
+<img width="630" height="500" alt="Image_10" src="https://github.com/user-attachments/assets/84bb9686-b76e-4900-b881-2344aac8b40f" />
 
 -----------------------------------------------------------
 1. TEMPLATE OVERVIEW & HIGHLIGHTS
