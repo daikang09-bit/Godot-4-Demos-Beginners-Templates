@@ -26,7 +26,7 @@ Permanent Access: Following/Supporting this project now ensures you keep all 10 
 - Highlights: Learn how to use Arrays to record player inputs and Dictionaries for easy data mapping, complete with an automated playback system.
 - Gameplay Instructions: Move your mouse over the piano keys to highlight them white. Click the keys to play sounds, and the notes will appear in the note display area at the top of the screen. After composing your music, click the Play button on the right to play it back, or click the Erase button to clear the music.
 - File: 01_piano.zip
-![1](https://github.com/user-attachments/assets/639d87bb-ab13-4277-9e56-055089a43cf8)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9442c471-125e-453a-9d4f-f117419dcb15" />
 
 #[02] Coloring Game - Logic & Color Mixing (G 4.x)
 - Highlights: PhysicsPointQuery for click detection, Tween-based 
