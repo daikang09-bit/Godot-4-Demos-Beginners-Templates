@@ -33,6 +33,7 @@ Permanent Access: Following/Supporting this project now ensures you keep all 10 
   focus effects, and additive color mixing logic.
 - Gameplay Instructions: Click the butterfly or bee to zoom in. Select a color to paint. Click an empty area to return the coloring module to its original position. Different colors can be mixed to create new colors.
 - File: 02_coloring.zip
+
 ![2](https://github.com/user-attachments/assets/0be5b4f8-c0b4-4a88-b658-b7bc4d5c14f3)
 
 #[03] Fish Game - Jump & Auto-Loop Movement (G 4.x)
@@ -40,6 +41,7 @@ Permanent Access: Following/Supporting this project now ensures you keep all 10 
   and random object respawning (Endless Runner style).
 - Gameplay Instructions: Click the screen to make the fish jump out of the water. A sound plays when the fish’s mouth hits a fly. The fish then rotates and falls back into the water. Each successful hit increases the fly’s speed for the next round.
 - File: 03_fish.zip
+
 ![3](https://github.com/user-attachments/assets/cac5bcc8-451b-4b51-88de-2983220fec5f)
 
 #[04] Dragonfly Puzzle - Logic Judge & Node Arrays (G 4.x)
@@ -47,6 +49,7 @@ Permanent Access: Following/Supporting this project now ensures you keep all 10 
   and normalized angle handling (0°-270° logic).
 - Gameplay Instructions: At the start, four dragonflies face different directions. Click a dragonfly to rotate it 90 degrees clockwise. When all dragonflies face the same direction, they play an animation and a sound, then fly out of the scene.
 - File: 04_dragonfly.zip
+
 ![4](https://github.com/user-attachments/assets/405b5b22-76be-4f3f-891d-40d3223d5679)
 
 #[05] Lucky Duck - Random Probability & Game Loops (G 4.x)
@@ -54,6 +57,7 @@ Permanent Access: Following/Supporting this project now ensures you keep all 10 
   delays (await), and automatic game reset architecture.
 - Gameplay Instructions:Four ducks appear at the start. Click a duck to rotate it 90 degrees counterclockwise and return. Each duck randomly catches a leaf from the water. When all ducks have a leaf in their mouths, a sound plays and the ducks swim out of the scene.
 - File: 05_duck.zip
+
 ![5](https://github.com/user-attachments/assets/6e56666c-0c56-486d-988d-c37f2ecd106e)
 
 -----------------------------------------------------------
