@@ -6,7 +6,6 @@ Version: 1.1 (Includes 5 Project Templates)
 Compatibility: Godot 4.x 
 Scripting Language: GDScript
 ===========================================================
-
 🚀 Godot 4 Mini-Game Hub
  A collection of fun, bite-sized 2D games built for beginners to learn Godot 4.x by deconstructing real project logic. 
 
