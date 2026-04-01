@@ -1,16 +1,23 @@
 Godot 4 2D Example Templates (The Starter Collection)
-===========================================================
+==============================
 Author: Godot Example Hub
+
 Website: godotexamplehub.itch.io
+
 Version: 1.1 (Includes 5 Project Templates)
+
 Compatibility: Godot 4.x 
+
 Scripting Language: GDScript
-===========================================================
+
+
 🚀 Godot 4 Mini-Game Hub
  A collection of fun, bite-sized 2D games built for beginners to learn Godot 4.x by deconstructing real project logic. 
+ 
 
 📈 Milestone: 10 Games Completed! All available on itch.io
 https://godotexamplehub.itch.io/godot4-lesson1
+
 
 ⭐ Why Support Now?
 If these templates saved your learning or development time, please consider giving us a ⭐ Rate & Follow!
