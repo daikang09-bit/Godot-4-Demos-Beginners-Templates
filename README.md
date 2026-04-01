@@ -19,8 +19,7 @@ Scripting Language: GDScript
 https://godotexamplehub.itch.io/godot4-lesson1
 
 
-⭐ Why Support Now?
-If these templates saved your learning or development time, please consider giving us a ⭐ Rate & Follow!
+⭐If these templates saved your learning or development time, please consider giving us a ⭐ Rate & Follow!
 Permanent Access: Following/Supporting this project now ensures you keep all 10 current templates for FREE even if the project model changes later.
 <img width="1379" height="780" alt="image" src="https://github.com/user-attachments/assets/3974bed3-7ce9-4ed7-9b82-85e47aa39dca" />
 
